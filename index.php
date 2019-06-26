@@ -3,7 +3,7 @@ require_once('functions.php');
 $file;
 $directory;
 if(isset($_FILES['csv_file']) && isset($_POST['batch_type'])):
-	
+
 	$file = basename($_FILES['csv_file']['name']);
 
 	$file_name = explode('.', $file);
