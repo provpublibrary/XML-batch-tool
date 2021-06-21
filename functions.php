@@ -124,7 +124,7 @@ class getFile
             
 				$mods_subject = $mods->addChild('mods:subject', null, $schema_uri);
 
-                if($data[$i]['Dublin Core:Subject Local'] != ''):
+                /*if($data[$i]['Dublin Core:Subject Local'] != ''):
 					$subjects = explode(';', $data[$i]['Dublin Core:Subject Local']);
 
 					foreach($subjects as $s):
@@ -133,7 +133,7 @@ class getFile
                         $topic->addAttribute('authority', $subj_auth);
                         $topic->addAttribute('authorityURI', $subj_auth_uri);
 					endforeach;
-				endif;
+				endif;*/
             
 				if($data[$i]['Dublin Core:Subject'] != ''):
 					$subjects = explode(';', $data[$i]['Dublin Core:Subject']);
